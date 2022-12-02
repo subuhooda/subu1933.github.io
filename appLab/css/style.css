@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+.font {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-blue {
+  background-color: #2500f9;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.fw-400 {
+  font-weight: 500;
+}
+
+.z-index-p {
+  z-index: 9999;
+}
+
+.z-index-s {
+  z-index: -1;
+}
+
+.mrgn-left {
+  margin-left: 7rem;
+}
+
+.footer-bg {
+  background-color: #09142e;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+.top-header {
+  -webkit-box-shadow: 1px 1px 2px #959595;
+          box-shadow: 1px 1px 2px #959595;
+}
+
+.nav-link {
+  color: black;
+  position: relative;
+  padding-left: 0 !important;
+}
+.nav-link::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  border-bottom: 2px solid #2500f9;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+.nav-link:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #2500f9;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.blue_btn {
+  border: unset;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+}
+.blue_btn:hover {
+  background-color: black;
+  -webkit-transition: 0.5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
+}
+
+/* ============ Hero section =========== */
+.hero-section {
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/trans_bg_img.png") no-repeat center;
+  width: 99%;
+  top: 70%;
+  bottom: 0;
+  z-index: -1;
+}
+.hero-section .title {
+  padding: 1px 0;
+  width: 34rem;
+  background-color: #e2eaed;
+  border-radius: 50px;
+}
+.hero-section .title img {
+  padding: 6px;
+  background: #feaa25;
+  border-radius: 50%;
+}
+.hero-section .title span {
+  margin-left: 1rem;
+}
+.hero-section .hero-caption h1 {
+  font-size: 6rem;
+}
+.hero-section .hero-caption p {
+  color: #616368;
+  width: 40rem;
+}
+
+.company-section {
+  margin-top: 10rem;
+}
+.company-section p {
+  color: #242f51;
+}
+
+.apps-feature {
+  margin-top: 12rem;
+}
+.apps-feature .apps-feature-caption h1 {
+  font-size: 3.6rem;
+  color: #242f51;
+}
+.apps-feature .apps-feature-caption p {
+  font-size: 1.6rem;
+  color: #616368;
+  margin-bottom: 5rem;
+}
+.apps-feature .sub-feature-caption {
+  margin-bottom: 4rem;
+}
+.apps-feature .sub-feature-caption h2 {
+  color: #f55767;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.apps-feature .sub-feature-caption section span {
+  color: #616368;
+  display: block;
+  width: 22rem;
+}
+
+.jackpots-section {
+  margin-top: 8rem;
+  position: relative;
+}
+.jackpots-section::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0.4rem;
+  border-right: 1px solid #959595;
+  left: 50%;
+  top: 0;
+}
+.jackpots-section h1 {
+  font-size: 4rem;
+  color: #242f51;
+  font-weight: 700;
+  width: 40rem;
+  letter-spacing: 0rem;
+}
+.jackpots-section p {
+  width: 40rem;
+  color: #616368;
+  font-weight: 600;
+}
+
+.pay img {
+  margin-bottom: 3rem;
+}
+.pay:nth-child(1) h1 {
+  font-size: 2rem;
+  color: #f55767;
+  margin-bottom: 1rem;
+}
+.pay:nth-child(1) p {
+  font-size: 1.6rem;
+  color: #616368;
+  width: 25rem;
+}
+.pay:nth-child(2) h1 {
+  font-size: 2rem;
+  color: #2563ff;
+  margin-bottom: 1rem;
+}
+.pay:nth-child(2) p {
+  font-size: 1.6rem;
+  color: #616368;
+  width: 25rem;
+}
+.pay:nth-child(3) h1 {
+  font-size: 2rem;
+  color: #40975f;
+  margin-bottom: 1rem;
+}
+.pay:nth-child(3) p {
+  font-size: 1.6rem;
+  color: #616368;
+  width: 25rem;
+}
+
+.integration_caption h1 {
+  font-size: 3.6rem;
+  color: #242f51;
+  max-width: 35rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.integration_caption p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #616368;
+  width: 40rem;
+  margin-top: 2rem;
+}
+.integration_caption button {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.application-section {
+  margin-top: 10rem;
+}
+.application-section h1 {
+  font-size: 3.6rem;
+  color: #242f51;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.application-section p {
+  font-size: 1.6rem;
+  color: #616368;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-top: 1rem;
+}
+.application-section .appication_caption img {
+  width: 8rem;
+  height: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.application-section .appication_caption p {
+  width: 30rem;
+  margin: auto;
+}
+
+.ultimate-built {
+  margin-top: 8rem;
+}
+.ultimate-built h1 {
+  font-size: 3.6rem;
+  color: #242f51;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.ultimate-built p {
+  font-size: 1.6rem;
+  color: #616368;
+  margin-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+.ultimate-built .ultimate-caption {
+  margin-top: 4rem;
+  -webkit-column-gap: 6rem;
+     -moz-column-gap: 6rem;
+          column-gap: 6rem;
+}
+.ultimate-built .ultimate-caption .sub-ultimate img {
+  height: 8rem;
+  width: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.accordion {
+  width: 80%;
+  margin: 8rem auto 0 auto;
+}
+.accordion .accordion-section {
+  margin: 2rem;
+  background: #f5f7fa;
+  border-radius: 1rem;
+}
+.accordion .accordion-section button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem;
+  padding-left: 4rem;
+  letter-spacing: 0.1rem;
+}
+.accordion .accordion-section .accordion-content p {
+  font-size: 1.6rem;
+  padding: 0rem 4rem 4rem 4rem;
+  line-height: 3rem;
+  font-weight: 600;
+  display: none;
+}
+.accordion .accordion-active .accordion-content p {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding-top: 9rem;
+}
+.footer ul li {
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-section .hero-caption .font-lg {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-section {
+    margin-top: 5rem;
+  }
+  .hero-section .hero-caption .font-md {
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .hero-section .hero-caption p {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .company-section ul {
+    -webkit-column-gap: 5rem;
+       -moz-column-gap: 5rem;
+            column-gap: 5rem;
+    row-gap: 0rem;
+  }
+  .company-section ul li img {
+    width: 10rem;
+    height: 9rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .apps-feature {
+    margin-top: 6rem !important;
+  }
+  .apps-feature .apps-feature-caption {
+    margin-top: 4rem;
+  }
+  .apps-feature .apps-feature-caption h1 {
+    text-align: center;
+  }
+  .apps-feature .apps-feature-caption h1 br {
+    display: none;
+  }
+  .apps-feature .apps-feature-caption p {
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 2.2rem;
+  }
+  .apps-feature .apps-feature-caption .sub-feature-caption section span {
+    width: 100%;
+  }
+  .apps-feature .apps-feature-caption .mrgn-left {
+    margin-left: 0;
+  }
+  .jackpots-section {
+    margin-top: 2rem !important;
+  }
+  .jackpots-section::after {
+    display: none;
+  }
+  .jackpots-section h1 {
+    width: 100%;
+    text-align: center;
+    line-height: 3.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2.5rem !important;
+  }
+  .jackpots-section p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    line-height: 2.3rem;
+    margin-top: 0.5rem;
+  }
+  .pay {
+    margin-top: 5rem;
+  }
+  .pay img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem !important;
+  }
+  .pay:nth-child(1), .pay:nth-child(2), .pay:nth-child(3) {
+    text-align: center;
+  }
+  .pay p {
+    text-align: center;
+    width: 70% !important;
+    margin: auto;
+  }
+  .integration_caption h1 {
+    max-width: 100% !important;
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .integration_caption p {
+    width: 100% !important;
+    margin: auto;
+    text-align: center;
+  }
+  .integration_caption button {
+    display: block;
+    margin: auto;
+  }
+  .application-section {
+    margin-top: 7rem;
+  }
+  .ultimate-built h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .ultimate-built h1 br {
+    display: none;
+  }
+  .ultimate-built p {
+    text-align: center;
+  }
+  .ultimate-built .ultimate-caption {
+    text-align: center;
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+  .ultimate-built .ultimate-caption .sub-ultimate p {
+    width: 60%;
+    margin: auto;
+    margin-top: 1.4rem;
+  }
+  .ultimate-built button {
+    display: block;
+    margin: auto;
+    margin-top: 3rem !important;
+  }
+  .accordion .accordion-section {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .accordion .accordion-section button {
+    padding-bottom: 5px;
+    padding-left: 18px;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .accordion .accordion-section .accordion-content p {
+    padding-left: 18px;
+    padding-bottom: 20px;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-section::before {
+    width: 95% !important;
+  }
+  .hero-section .title {
+    width: 30rem;
+  }
+  .hero-section .title img {
+    padding: 4px;
+  }
+  .hero-section .title span {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero-caption .font-md {
+    font-size: 3rem;
+  }
+  .hero-section .hero-caption p {
+    font-size: 16px;
+    line-height: 2.3rem;
+  }
+  .img-width {
+    width: 60%;
+  }
+  .jackpots-section h1 {
+    font-size: 2rem !important;
+    line-height: 2.7rem;
+    width: 95% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .jackpots-section P {
+    width: 90% !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .integration_caption h1 {
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+  }
+  .integration_caption p {
+    margin-top: 1rem !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero-section .title img {
+    padding: 4px;
+  }
+  .hero-section .title span {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero-caption .font-md {
+    font-size: 2rem;
+  }
+  .hero-section .hero-caption p {
+    width: 90% !important;
+  }
+  .company-section ul {
+    -webkit-column-gap: 4rem;
+       -moz-column-gap: 4rem;
+            column-gap: 4rem;
+    row-gap: 2.5rem;
+  }
+  .company-section ul li img {
+    width: 10rem;
+    height: 7rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .hero-section .title {
+    width: 95% !important;
+  }
+}

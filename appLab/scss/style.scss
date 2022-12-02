@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+
+@import "./font";
+
+
+
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+
+.top-header {
+    box-shadow: 1px 1px 2px #959595;
+}
+
+.nav-link {
+    color: black;
+    position: relative;
+    padding-left: 0 !important;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 100%;
+        border-bottom: 2px solid #2500f9;
+        width: 0;
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        transition: .5s all ease-in-out;
+    }
+
+    &:hover::before {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #2500f9;
+    transition: .2s all ease-in-out;
+}
+
+
+// Nav button
+.blue_btn {
+    border: unset;
+    color: #ffff;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+
+    &:hover {
+        background-color: black;
+        transition: .5s ease-in-out all;
+    }
+}
+
+
+/* ============ Hero section =========== */
+
+.hero-section {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url("../img/trans_bg_img.png") no-repeat center;
+        width: 99%;
+        top: 70%;
+        bottom: 0;
+        z-index: -1;
+
+    }
+
+    .title {
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: center;
+        padding: 1px 0;
+        width: 34rem;
+        background-color: #e2eaed;
+        border-radius: 50px;
+
+
+
+        img {
+            padding: 6px;
+            background: #feaa25;
+            border-radius: 50%;
+        }
+
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+
+    .hero-caption {
+
+        h1 {
+            font-size: 6rem;
+
+        }
+
+        p {
+            color: #616368;
+            width: 40rem;
+        }
+    }
+}
+
+
+
+// company section start 
+
+.company-section {
+
+    margin-top: 10rem;
+
+    p {
+        color: #242f51;
+    }
+
+}
+
+// apps features
+
+.apps-feature {
+    margin-top: 12rem;
+
+
+    .apps-feature-caption {
+
+
+        h1 {
+            font-size: 3.6rem;
+            color: #242f51;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #616368;
+            margin-bottom: 5rem;
+        }
+    }
+
+
+    .sub-feature-caption {
+        margin-bottom: 4rem;
+
+
+
+
+
+        h2 {
+            color: #f55767;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        section {
+
+            span {
+                color: #616368;
+                display: block;
+                width: 22rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+// features close
+
+// jackpots start
+
+.jackpots-section {
+    margin-top: 8rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0.4rem;
+        border-right: 1px solid #959595;
+        left: 50%;
+        top: 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        color: #242f51;
+        font-weight: 700;
+        width: 40rem;
+        letter-spacing: 0rem;
+    }
+
+    p {
+        width: 40rem;
+        color: #616368;
+        font-weight: 600;
+    }
+}
+
+// pay
+.pay {
+
+    img {
+        margin-bottom: 3rem;
+    }
+
+    &:nth-child(1) {
+
+        h1 {
+            font-size: 2rem;
+            color: #f55767;
+            margin-bottom: 1rem;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #616368;
+            width: 25rem;
+        }
+    }
+
+    &:nth-child(2) {
+
+        h1 {
+            font-size: 2rem;
+            color: #2563ff;
+            margin-bottom: 1rem;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #616368;
+            width: 25rem;
+        }
+    }
+
+    &:nth-child(3) {
+
+        h1 {
+            font-size: 2rem;
+            color: #40975f;
+            margin-bottom: 1rem;
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: #616368;
+            width: 25rem;
+        }
+    }
+
+
+}
+
+// integration 
+
+.integration_caption {
+
+    h1 {
+        font-size: 3.6rem;
+        color: #242f51;
+        max-width: 35rem;
+        line-height: 4rem;
+        font-weight: 700;
+
+
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #616368;
+        width: 40rem;
+        margin-top: 2rem;
+
+
+    }
+
+    button {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 2rem;
+    }
+}
+
+// application section
+.application-section {
+    margin-top: 10rem;
+
+    h1 {
+        font-size: 3.6rem;
+        color: #242f51;
+        line-height: 4rem;
+        font-weight: 700;
+
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: #616368;
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-top: 1rem;
+
+    }
+
+    .appication_caption {
+
+
+
+        img {
+            width: 8rem;
+            height: 8rem;
+            object-fit: contain;
+        }
+
+        p {
+
+            width: 30rem;
+            margin: auto;
+
+        }
+    }
+}
+
+// ultimate caption
+.ultimate-built {
+    margin-top: 8rem;
+
+    h1 {
+        font-size: 3.6rem;
+        color: #242f51;
+        line-height: 4rem;
+        font-weight: 700;
+
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: #616368;
+        margin-top: 0.5rem;
+        margin-top: 0.5rem;
+
+    }
+
+    .ultimate-caption {
+        margin-top: 4rem;
+        column-gap: 6rem;
+
+        .sub-ultimate {
+            img {
+                height: 8rem;
+                width: 8rem;
+                object-fit: contain;
+
+            }
+        }
+    }
+}
+
+
+// accordion section
+
+.accordion {
+    width: 80%;
+    margin: 8rem auto 0 auto;
+
+    .accordion-section {
+        margin: 2rem;
+        background: #f5f7fa;
+        border-radius: 1rem;
+
+        button {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 2rem;
+            padding-left: 4rem;
+            letter-spacing: 0.1rem;
+        }
+
+        .accordion-content {
+            p {
+                font-size: 1.6rem;
+                padding: 0rem 4rem 4rem 4rem;
+                line-height: 3rem;
+                font-weight: 600;
+                display: none;
+            }
+        }
+    }
+
+    .accordion-active {
+
+        .accordion-content {
+            p {
+                display: block;
+                user-select: none;
+            }
+        }
+
+
+    }
+}
+
+// footer
+
+
+.footer {
+    margin-top: 5rem;
+    padding-top: 9rem;
+
+    ul {
+
+        li {
+            margin: 1.5rem;
+            cursor: pointer;
+
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@import "./phone";
