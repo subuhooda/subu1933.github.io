@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Corona 2.O</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- bootstrap style sheet -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+    <!-- hero section with navigation and hero heading  -->
+
+    <section class="container-fluid hero-section p-0">
+
+
+        <div class="navigation d-flex  justify-content-between align-items-center  bg-red ">
+
+            <div class="search bg-blue d-flex justify-content-center align-items-center cursor-pointer">
+                <img src="./img/searach.png" alt="" class="search-icon">
+            </div>
+
+            <div class="menu d-xl-none d-lg-none d-block">
+                <i class="fa-solid fa-bars fs-30 cursor-pointer humburger text-white"></i>
+            </div>
+
+            <div class="nav-links-section ">
+                <ul class="arial d-flex flex-xl-row  flex-lg-row flex-column text-center  ul-links">
+
+
+                    <li class="list-unstyled"><a href="#"
+                            class="text-uppercase text-decoration-none text-white">Home</a></li>
+
+                    <li class="list-unstyled"><a href="#"
+                            class="text-uppercase text-decoration-none text-white">about</a></li>
+
+                    <li class="list-unstyled"><a href="#" class="text-uppercase text-decoration-none text-white">take
+                            action</a></li>
+
+                    <li class="list-unstyled position-relative d-xl-block d-lg-block d-none "><a href="#"
+                            class="text-uppercase text-decoration-none text-white">corona</a> <img src="./img/virus.png"
+                            alt="" class="d-block  ms-auto me-auto position-absolute bg-red z-negative  ">
+                    </li>
+
+
+                    <li class="list-unstyled"><a href="#"
+                            class="text-uppercase text-decoration-none text-white">news</a></li>
+
+                    <li class="list-unstyled"><a href="#"
+                            class="text-uppercase text-decoration-none text-white">doctores</a></li>
+
+                    <li class="list-unstyled"><a href="#"
+                            class="text-uppercase text-decoration-none text-white">contact</a></li>
+
+                    <i
+                        class="fa-sharp fa-solid fa-xmark close-menu  position-absolute cursor-pointer text-white fs-45 position-fixed top-0 end-0 pe-4 pt-3 cursor-pointer d-xl-none d-lg-none d-block"></i>
+                </ul>
+            </div>
+
+
+            <div class="contact  bg-blue d-flex justify-content-center align-items-center cursor-pointer">
+                <img src="./img/contact.png" alt="" class="contact-icon user-none">
+            </div>
+        </div>
+
+
+
+
+
+        <!-- search section -->
+        <div
+            class="search-page position-fixed h-100  top-0 w-100 z-positive d-flex justify-content-center align-items-center ">
+            <div class="container-xl container-lg container-md container-fluid">
+                <h1 class="poppins-font mb-4 fs-45   text-center text-uppercase">Search</h1>
+
+                <form action="#" class="w-100">
+                    <div class=" w-60 ms-auto me-auto position-relative">
+                        <input type="text" placeholder="Search" class="m-auto d-block fs-17  outline">
+                        <img src="./img/searach.png" alt=""
+                            class="position-absolute  cursor-pointer user-none search-page-icon">
+                    </div>
+                    <i class="fa-sharp fa-solid fa-xmark close  position-absolute cursor-pointer"></i>
+                </form>
+            </div>
+        </div>
+
+        <!-- contact section -->
+        <div
+            class="contact-page position-fixed overflow-auto h-100 w-100 bg-blue top-0 z-positive  d-flex justify-content-center">
+
+            <div class="container">
+
+                <form class="w-100 ">
+                    <h1 class="poppins-font mb-4  fs-45 text-white  text-center text-uppercase">contact us</h1>
+
+                    <input type="text" placeholder="First name" class="d-block ms-auto me-auto fs-17 outline w-40">
+                    <br>
+                    <input type="text" placeholder="Last name" class="d-block ms-auto me-auto fs-17 outline w-40">
+                    <br>
+                    <input type="email" placeholder="Email" class="d-block ms-auto me-auto fs-17 outline w-40"> <br>
+                    <input type="text" placeholder="Subject" class="d-block ms-auto me-auto fs-17 outline w-40"> <br>
+                    <textarea cols="30" rows="5" placeholder="Message"
+                        class="d-block ms-auto me-auto fs-17 outline w-40"></textarea>
+
+                    <div class="contact-btn d-block text-start ms-auto me-auto mt-4 pt-3 w-40 pb-5">
+                        <a href="#" class="text-decoration-none text-uppercase text-white ">send message</a>
+                    </div>
+                </form>
+            </div>
+
+            <i class="fa-sharp fa-solid fa-xmark contact-close  position-absolute cursor-pointer user-none"></i>
+        </div>
+
+
+        <div class="container">
+            <div class="hero-heading text-xl-start text-lg-start text-md-start text-center">
+                <h1 class="text-white poppins-font fs-89 fw-700">Care early <br> Coronavirus</h1>
+
+                <div
+                    class="hero-btn d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center mt-xl-5 mt-lg-5 mt-md-5 mt-4 pt-xl-2 pt-lg-2 pt-3 gap-3 flex-wrap">
+                    <a href="https://covid19.who.int/"
+                        class="text-decoration-none text-capitalize fs-17 fw-400   d-flex align-items-center justify-content-center bg-red text-white cursor-pointer">
+                        read
+                        more</a>
+
+                    <a href="#"
+                        class="text-decoration-none text-capitalize fs-17 fw-400  d-flex align-items-center justify-content-center bg-white text-black cursor-pointer">About
+                        us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- about section -->
+
+    <div class="container">
+
+        <div class="about-section d-flex align-items-center flex-xl-row flex-lg-row flex-column  gap-5 bg-white">
+            <div class="about-text text-xl-start text-lg-start text-center">
+                <h2 class="poppins-font fw-700  fs-45 bt text-capitalize ">about corona virus</h2>
+                <p class="poppins-font fs-17 fw-400 bt ">English. Many desktop publishing packages and web page
+                    editors
+                    now
+                    use
+                    learn ipsum as their default
+                    model text, and a search for</p>
+
+                <a href="#"
+                    class="text-decoration-none text-uppercase fs-17 fw-700 bg-blue text-white d-flex justify-content-center align-items-center cursor-pointer d-block ms-xl-0  ms-lg-0  ms-auto me-auto">read
+                    more</a>
+            </div>
+
+            <div class="about-img d-flex align-items-end justify-content-center flex-row-reverse ">
+                <img src="./img/big-corona.jpg" alt="" class="big-virus">
+                <img src="./img/small-virus.jpg" alt="" class="small-virus">
+            </div>
+        </div>
+    </div>
+    <!-- about close -->
+
+
+    <!-- virus effect section -->
+    <div class="container">
+        <div
+            class="virus-effect-section d-flex align-items-center justify-content-center gap-5 flex-xl-row flex-lg-row flex-column-reverse">
+            <div class="effect-img">
+                <img src="./img/virus-effect-img.png" alt="">
+            </div>
+
+            <div class=" effect-text">
+                <h3 class="poppins-font fw-700  fs-45 bt text-uppercase text-xl-start text-lg-start text-center">corona
+                    virus what it is?</h3>
+
+                <p class="poppins-font fs-17 fw-400 bt text-xl-start text-lg-start text-center">when looking at its
+                    layout. The point of using lorem
+                    ipsum
+                    is
+                    that it has a more-or-less normal distribution of letters, as opposed to using</p>
+
+
+                <a href="#"
+                    class="text-decoration-none text-uppercase fs-17 fw-700 bg-blue text-white d-flex justify-content-center align-items-center  cursor-pointer d-block ms-xl-0  ms-lg-0  ms-auto me-auto  ">read
+                    more</a>
+            </div>
+        </div>
+    </div>
+    <!-- virus effect section close -->
+
+
+
+    <!-- protect section start -->
+    <div class="contaienr-fluid">
+        <div class="container">
+            <div class="protect-section">
+                <h4 class="poppins-font fw-700  fs-45 bt text-uppercase  text-center">corona
+                    virus what it is?</h4>
+
+
+                <p class="poppins-font fs-17 fw-400 bt text-center mt-2">when looking at its layout.
+                    The point of using lore ipsum is that it has a more-or-less normal distribution of letters, as
+                    opposed
+                    to using</p>
+            </div>
+
+            <div
+                class="testomonial-container d-flex justify-content-between align-items-center gap-4  position-relative mt-5 flex-xl-row flex-lg-row flex-column">
+
+                <div
+                    class="testomonial-caption text-center  d-flex flex-column align-items-center justify-content-center p-4  cursor-pointer">
+                    <img src="./img/sick.png" alt="">
+                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">wear mask</h4>
+                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
+                        now
+                        use lorem
+                        ipsum as their default model
+                        text, and a search for </p>
+
+                    <a href="#"
+                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none testomonial-btn text-white mt-4">read
+                        more</a>
+                </div>
+                <div
+                    class="testomonial-caption text-center d-flex flex-column align-items-center justify-content-center p-4 cursor-pointer">
+                    <img src="./img/hand-wash.png" alt="">
+                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">wash your hands</h4>
+                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
+                        now
+                        use lorem ipsum as their default model
+                        text, and a search for </p>
+                    <a href="#"
+                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none mt-4 testomonial-btn text-white bg-red">read
+                        more</a>
+                </div>
+                <div
+                    class="testomonial-caption text-center d-flex flex-column align-items-center justify-content-center p-4 cursor-pointer">
+                    <img src="./img/real-estate.png" alt="">
+                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">stay at home</h4>
+                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
+                        now
+                        use lorem ipsum as their default model
+                        text, and a search for </p>
+                    <a href="#"
+                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none testomonial-btn  text-white mt-4">read
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project section close -->
+
+
+    <!-- coronavirus cases section start -->
+    <div class="container-fluid p-0 bg-gray pt-4 pb-5">
+        <div class="container">
+            <div class="case-section">
+                <h4 class="poppins-font fw-700  fs-45 bt text-uppercase  text-center">coronavirus cases</h4>
+
+                <p class="poppins-font fs-17 text-center bt mt-3 fw-400 line30">It is a long established fact that a
+                    reader
+                    will be
+                    distracted
+                    by readable content of a page when looking at <span class="d-xl-block d-lg-block d-inline"></span>
+                    its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution of
+                    letters, <span class="d-xl-block d-lg-block d-inline"> as opposed to using Content here, content
+                        here', making
+                        it look</span>
+                </p>
+
+
+                <div
+                    class="case-box-container mt-5 d-flex justify-content-center align-items-center flex-xl-row flex-column  gap-xl-4 gap-5 p-3">
+
+                    <div class="case-caption text-center bg-white position-relative ">
+                        <img src="./img/corona-1.png" alt="" class="img-2">
+                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 01</h6>
+                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                            using
+                            'Content here, content here', making it look</p>
+
+                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
+                    </div>
+
+                    <div class="case-caption text-center  bg-white position-relative">
+                        <img src="./img/corona-2.png" alt="" class="img-2">
+                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 02</h6>
+                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                            using
+                            'Content here, content here', making it look</p>
+                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
+                    </div>
+
+                    <div class="case-caption text-center bg-white position-relative">
+                        <img src="./img/corona-3.png" alt="" class="img-2">
+                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 03</h6>
+                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout. The point of using
+                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                            using
+                            'Content here, content here', making it look</p>
+                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- coronavirus cases section end -->
+
+    <!-- footer start -->
+
+    <div class="container-fluid p-0 bg-black">
+        <div class="container">
+            <div
+                class="corona-footer  text-white d-flex justify-content-center gap-5 flex-wrap flex-xl-row flex-lg-row flex-md-row flex-column text-xl-start text-lg-start text-md-start text-center">
+
+                <div class="footer-caption ">
+                    <h3 class="poppins-font fs-18 text-uppercase fw-700">resources</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li class="fs-12">What we do</li>
+                        <li class="fs-12">media</li>
+                        <li class="fs-12">Travel Advice</li>
+                        <li class="fs-12">Protection</li>
+                        <li class="fs-12">Care</li>
+                    </ul>
+                </div>
+                <div class="footer-caption">
+                    <h3 class="poppins-font fs-18 text-uppercase fw-700">about</h3>
+                    <p class="poppins-font fs-12 mt-3 fw-400"> Many desktop publishing packages and web page editors now
+                        use
+                        Lorem
+                        Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
+                        still in their infancy. Various</p>
+
+                </div>
+                <div class="footer-caption">
+                    <h3 class="poppins-font fs-18 text-uppercase fw-700">contact us</h3>
+                    <ul class="list-unstyled mt-3">
+                        <li class="fs-12">Making this the first true</li>
+                        <li class="fs-12">Call: +91 9992165700</li>
+                        <li class="fs-12">Email: shubhamkumar65700@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-caption">
+                    <h3 class="poppins-font fs-18 text-uppercase fw-700">countrys</h3>
+                    <img src="./img/map.png" alt="" class="mt-3">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer end -->
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

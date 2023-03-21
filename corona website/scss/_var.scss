@@ -1,0 +1,137 @@
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.bg-blue {
+    background-color: #05254d;
+}
+
+.bg-red {
+    background-color: #ed1c24 !important;
+}
+
+.bg-gray {
+    background-color: #ebe6e64a;
+}
+
+.bt {
+    color: #081419;
+}
+
+
+.fs-45 {
+    font-size: 45px;
+
+    @media only screen and (max-width: 575px) {
+        font-size: 30px;
+    }
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-17 {
+    font-size: 17px;
+
+    @media only screen and (max-width: 575px) {
+        font-size: 14px;
+    }
+}
+
+.fs-16 {
+    font-size: 16px;
+
+    @media only screen and (max-width: 575px) {
+        font-size: 14px;
+    }
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-89 {
+    font-size: 89px;
+    line-height: 85px;
+
+    @media only screen and (max-width: 767px) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.z-positive {
+    z-index: 1;
+}
+
+.z-negative {
+    z-index: -1;
+}
+
+.outline {
+    outline: none;
+
+}
+
+.w-40 {
+    width: 40%;
+
+    @media only screen and (max-width: 991px) {
+        width: 80%;
+    }
+}
+
+.w-60 {
+    width: 100%;
+}
+
+.user-none {
+    user-select: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.line30 {
+    line-height: 32px;
+}
