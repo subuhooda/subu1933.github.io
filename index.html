@@ -2,388 +2,464 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Corona 2.O</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstrak</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- bootstrap style sheet -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- main style sheet -->
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
 <body>
+  <div class="circular-text">
+    <span id="rotated" class="d-block text-white">
+      SCROLL &nbsp; SCROLL &nbsp; SCROLL &nbsp; SCROLL &nbsp; SCROLL &nbsp; SCROLL &nbsp;
+    </span>
+  </div>
 
-    <!-- hero section with navigation and hero heading  -->
-
-    <section class="container-fluid hero-section p-0">
-
-
-        <div class="navigation d-flex  justify-content-between align-items-center  bg-red ">
-
-            <div class="search bg-blue d-flex justify-content-center align-items-center cursor-pointer">
-                <img src="./img/searach.png" alt="" class="search-icon">
-            </div>
-
-            <div class="menu d-xl-none d-lg-none d-block">
-                <i class="fa-solid fa-bars fs-30 cursor-pointer humburger text-white"></i>
-            </div>
-
-            <div class="nav-links-section ">
-                <ul class="arial d-flex flex-xl-row  flex-lg-row flex-column text-center  ul-links">
-
-
-                    <li class="list-unstyled"><a href="#"
-                            class="text-uppercase text-decoration-none text-white">Home</a></li>
-
-                    <li class="list-unstyled"><a href="#"
-                            class="text-uppercase text-decoration-none text-white">about</a></li>
-
-                    <li class="list-unstyled"><a href="#" class="text-uppercase text-decoration-none text-white">take
-                            action</a></li>
-
-                    <li class="list-unstyled position-relative d-xl-block d-lg-block d-none "><a href="#"
-                            class="text-uppercase text-decoration-none text-white">corona</a> <img src="./img/virus.png"
-                            alt="" class="d-block  ms-auto me-auto position-absolute bg-red z-negative  ">
-                    </li>
-
-
-                    <li class="list-unstyled"><a href="#"
-                            class="text-uppercase text-decoration-none text-white">news</a></li>
-
-                    <li class="list-unstyled"><a href="#"
-                            class="text-uppercase text-decoration-none text-white">doctores</a></li>
-
-                    <li class="list-unstyled"><a href="#"
-                            class="text-uppercase text-decoration-none text-white">contact</a></li>
-
-                    <i
-                        class="fa-sharp fa-solid fa-xmark close-menu  position-absolute cursor-pointer text-white fs-45 position-fixed top-0 end-0 pe-4 pt-3 cursor-pointer d-xl-none d-lg-none d-block"></i>
-                </ul>
-            </div>
-
-
-            <div class="contact  bg-blue d-flex justify-content-center align-items-center cursor-pointer">
-                <img src="./img/contact.png" alt="" class="contact-icon user-none">
-            </div>
+  <section class="bg_1">
+    <header class="container pt-5 pt-4 header_section position-relative">
+      <nav class="d-flex justify-content-between align-items-center navigation">
+        <div class="logo">
+          <h2 class="futura-lt text-white">logo</h2>
         </div>
-
-
-
-
-
-        <!-- search section -->
-        <div
-            class="search-page position-fixed h-100  top-0 w-100 z-positive d-flex justify-content-center align-items-center ">
-            <div class="container-xl container-lg container-md container-fluid">
-                <h1 class="poppins-font mb-4 fs-45   text-center text-uppercase">Search</h1>
-
-                <form action="#" class="w-100">
-                    <div class=" w-60 ms-auto me-auto position-relative">
-                        <input type="text" placeholder="Search" class="m-auto d-block fs-17  outline">
-                        <img src="./img/searach.png" alt=""
-                            class="position-absolute  cursor-pointer user-none search-page-icon">
-                    </div>
-                    <i class="fa-sharp fa-solid fa-xmark close  position-absolute cursor-pointer"></i>
-                </form>
-            </div>
+        <ul
+          class="list-unstyled d-flex justify-content-lg-between justify-content-center align-items-center gap-5 nav-links flex-lg-row flex-column">
+          <li>
+            <a href="#" class="text-decoration-none text-capitalize futura-lt text-white fs-16">about</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-capitalize futura-lt text-white fs-16">work</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-capitalize futura-lt text-white fs-16">blog</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-capitalize futura-md nav_btn fs-16 text-white bg_primary">let's
+              talk</a>
+          </li>
+          <i class="fa-sharp fa-solid fa-xmark text-white fs-24 cursor-pointer close d-lg-none position-absolute"></i>
+        </ul>
+        <div class="d-lg-none">
+          <i class="fa-solid fa-bars menu text-white fs-24 cursor-pointer"></i>
         </div>
+      </nav>
+      <div class="text-center fs-96 text-uppercase fw-800 mt-5 pt-4 pb-5 mb-0 heading d-table mx-auto big">
+        <span class="d-table mx-auto">We</span>
+        <span class="primary_clr d-table mx-auto">think</span>
+        <span class="primary_clr d-table mx-auto">deep</span>
+        <span class="d-table mx-auto">for</span>
+        <span class="d-table mx-auto">designs</span>
+      </div>
 
-        <!-- contact section -->
-        <div
-            class="contact-page position-fixed overflow-auto h-100 w-100 bg-blue top-0 z-positive  d-flex justify-content-center">
+      <div class="social-links d-flex align-items-center flex-column position-absolute pb-5">
+        <a class="js-elm" href="#"><img src="public/img/linkdin.png" alt="" /></a>
+        <a class="js-elm" href="#"><img src="public/img/fb.png" alt="" /></a>
+        <a class="js-elm" href="#"><img src="public/img/instragram.png" alt="" /></a>
+        <a class="js-elm" href="#"><img src="public/img/dibble.png" alt="" /></a>
+      </div>
+    </header>
+  </section>
+  <!-- header close -->
 
-            <div class="container">
+  <!-- design section start  -->
 
-                <form class="w-100 ">
-                    <h1 class="poppins-font mb-4  fs-45 text-white  text-center text-uppercase">contact us</h1>
-
-                    <input type="text" placeholder="First name" class="d-block ms-auto me-auto fs-17 outline w-40">
-                    <br>
-                    <input type="text" placeholder="Last name" class="d-block ms-auto me-auto fs-17 outline w-40">
-                    <br>
-                    <input type="email" placeholder="Email" class="d-block ms-auto me-auto fs-17 outline w-40"> <br>
-                    <input type="text" placeholder="Subject" class="d-block ms-auto me-auto fs-17 outline w-40"> <br>
-                    <textarea cols="30" rows="5" placeholder="Message"
-                        class="d-block ms-auto me-auto fs-17 outline w-40"></textarea>
-
-                    <div class="contact-btn d-block text-start ms-auto me-auto mt-4 pt-3 w-40 pb-5">
-                        <a href="#" class="text-decoration-none text-uppercase text-white ">send message</a>
-                    </div>
-                </form>
-            </div>
-
-            <i class="fa-sharp fa-solid fa-xmark contact-close  position-absolute cursor-pointer user-none"></i>
-        </div>
-
-
-        <div class="container">
-            <div class="hero-heading text-xl-start text-lg-start text-md-start text-center">
-                <h1 class="text-white poppins-font fs-89 fw-700">Care early <br> Coronavirus</h1>
-
-                <div
-                    class="hero-btn d-flex align-items-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-center mt-xl-5 mt-lg-5 mt-md-5 mt-4 pt-xl-2 pt-lg-2 pt-3 gap-3 flex-wrap">
-                    <a href="https://covid19.who.int/"
-                        class="text-decoration-none text-capitalize fs-17 fw-400   d-flex align-items-center justify-content-center bg-red text-white cursor-pointer">
-                        read
-                        more</a>
-
-                    <a href="#"
-                        class="text-decoration-none text-capitalize fs-17 fw-400  d-flex align-items-center justify-content-center bg-white text-black cursor-pointer">About
-                        us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- about section -->
-
+  <div class="design_section bg_2">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
     <div class="container">
+      <h3 class="futura-md fs-84 text-white text-capitalize text-center">
+        abstrak
+      </h3>
 
-        <div class="about-section d-flex align-items-center flex-xl-row flex-lg-row flex-column  gap-5 bg-white">
-            <div class="about-text text-xl-start text-lg-start text-center">
-                <h2 class="poppins-font fw-700  fs-45 bt text-capitalize ">about corona virus</h2>
-                <p class="poppins-font fs-17 fw-400 bt ">English. Many desktop publishing packages and web page
-                    editors
-                    now
-                    use
-                    learn ipsum as their default
-                    model text, and a search for</p>
-
-                <a href="#"
-                    class="text-decoration-none text-uppercase fs-17 fw-700 bg-blue text-white d-flex justify-content-center align-items-center cursor-pointer d-block ms-xl-0  ms-lg-0  ms-auto me-auto">read
-                    more</a>
-            </div>
-
-            <div class="about-img d-flex align-items-end justify-content-center flex-row-reverse ">
-                <img src="./img/big-corona.jpg" alt="" class="big-virus">
-                <img src="./img/small-virus.jpg" alt="" class="small-virus">
-            </div>
+      <div class="design_container d-flex gap-4 justify-content-center align-items-center mt-5 pt-5">
+        <div class="design_number d-flex flex-column gap-4">
+          <p class="fs-22 futura-md">01</p>
+          <p class="fs-22 futura-md">02</p>
+          <p class="fs-22 futura-md">03</p>
         </div>
+
+        <div class="design_content">
+          <div class="design_text active futura-md text-white">
+            <h6 class="fs-20">1 Design</h6>
+            <p class="fs-16 futura-lt mt-1">
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature
+            </p>
+          </div>
+
+          <div class="design_text futura-md text-white">
+            <h6 class="fs-20">2 Design</h6>
+            <p class="fs-16 futura-lt mt-1">
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature
+            </p>
+          </div>
+
+          <div class="design_text design_text3 futura-md text-white">
+            <h6 class="fs-20">3 Design</h6>
+            <p class="fs-16 futura-lt mt-1">
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              text. It has roots in a piece of classical Latin literature
+            </p>
+          </div>
+        </div>
+
+        <div class="design_arrow d-flex justify-content-center align-items-center flex-column cursor-pointer">
+          <span><img src="public/img/arrow_!.png" alt="" class="arrow" /></span>
+          <span><img src="public/img/arrow_!.png" alt="" class="arrow" /></span>
+          <span><img src="public/img/arrow_!.png" alt="" class="arrow" /></span>
+        </div>
+      </div>
     </div>
-    <!-- about close -->
+  </div>
 
+  <!-- design section close -->
 
-    <!-- virus effect section -->
+  <!-- about section start -->
+  <section class="about_section bg_2 d-flex flex-column align-items-start justify-content-center">
     <div class="container">
-        <div
-            class="virus-effect-section d-flex align-items-center justify-content-center gap-5 flex-xl-row flex-lg-row flex-column-reverse">
-            <div class="effect-img">
-                <img src="./img/virus-effect-img.png" alt="">
-            </div>
+      <div class="d-table mx-auto big">
+        <h6 class="fs-16 futura-md text-white">About us</h6>
 
-            <div class=" effect-text">
-                <h3 class="poppins-font fw-700  fs-45 bt text-uppercase text-xl-start text-lg-start text-center">corona
-                    virus what it is?</h3>
-
-                <p class="poppins-font fs-17 fw-400 bt text-xl-start text-lg-start text-center">when looking at its
-                    layout. The point of using lorem
-                    ipsum
-                    is
-                    that it has a more-or-less normal distribution of letters, as opposed to using</p>
-
-
-                <a href="#"
-                    class="text-decoration-none text-uppercase fs-17 fw-700 bg-blue text-white d-flex justify-content-center align-items-center  cursor-pointer d-block ms-xl-0  ms-lg-0  ms-auto me-auto  ">read
-                    more</a>
-            </div>
+        <div class="position-relative text-clr fs-40 poppins">
+          It is a long established fact that a reader will be
+          <span class="position-absolute start-0 top-0 h-100 w-100 text-bright">
+            It is a long established fact that a reader will be</span>
         </div>
-    </div>
-    <!-- virus effect section close -->
-
-
-
-    <!-- protect section start -->
-    <div class="contaienr-fluid">
-        <div class="container">
-            <div class="protect-section">
-                <h4 class="poppins-font fw-700  fs-45 bt text-uppercase  text-center">corona
-                    virus what it is?</h4>
-
-
-                <p class="poppins-font fs-17 fw-400 bt text-center mt-2">when looking at its layout.
-                    The point of using lore ipsum is that it has a more-or-less normal distribution of letters, as
-                    opposed
-                    to using</p>
-            </div>
-
-            <div
-                class="testomonial-container d-flex justify-content-between align-items-center gap-4  position-relative mt-5 flex-xl-row flex-lg-row flex-column">
-
-                <div
-                    class="testomonial-caption text-center  d-flex flex-column align-items-center justify-content-center p-4  cursor-pointer">
-                    <img src="./img/sick.png" alt="">
-                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">wear mask</h4>
-                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
-                        now
-                        use lorem
-                        ipsum as their default model
-                        text, and a search for </p>
-
-                    <a href="#"
-                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none testomonial-btn text-white mt-4">read
-                        more</a>
-                </div>
-                <div
-                    class="testomonial-caption text-center d-flex flex-column align-items-center justify-content-center p-4 cursor-pointer">
-                    <img src="./img/hand-wash.png" alt="">
-                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">wash your hands</h4>
-                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
-                        now
-                        use lorem ipsum as their default model
-                        text, and a search for </p>
-                    <a href="#"
-                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none mt-4 testomonial-btn text-white bg-red">read
-                        more</a>
-                </div>
-                <div
-                    class="testomonial-caption text-center d-flex flex-column align-items-center justify-content-center p-4 cursor-pointer">
-                    <img src="./img/real-estate.png" alt="">
-                    <h4 class="fs-17 fw-700 poppins-font text-capitalize mt-4">stay at home</h4>
-                    <p class="poppins-font fs-17 bt fw-400 mt-2">Many desktop publishing packages and web page editors
-                        now
-                        use lorem ipsum as their default model
-                        text, and a search for </p>
-                    <a href="#"
-                        class="text-capitalize poppins-font fs-15 fw-700 text-decoration-none testomonial-btn  text-white mt-4">read
-                        more</a>
-                </div>
-            </div>
+        <div class="position-relative text-clr fs-40 poppins">
+          distracted by the readable content of a page
+          <span class="position-absolute start-0 top-0 h-100 w-100 text-bright">
+            distracted by the readable content of a page
+          </span>
         </div>
-    </div>
-    <!-- project section close -->
-
-
-    <!-- coronavirus cases section start -->
-    <div class="container-fluid p-0 bg-gray pt-4 pb-5">
-        <div class="container">
-            <div class="case-section">
-                <h4 class="poppins-font fw-700  fs-45 bt text-uppercase  text-center">coronavirus cases</h4>
-
-                <p class="poppins-font fs-17 text-center bt mt-3 fw-400 line30">It is a long established fact that a
-                    reader
-                    will be
-                    distracted
-                    by readable content of a page when looking at <span class="d-xl-block d-lg-block d-inline"></span>
-                    its layout. The point of using lorem ipsum is that it has a more-or-less normal distribution of
-                    letters, <span class="d-xl-block d-lg-block d-inline"> as opposed to using Content here, content
-                        here', making
-                        it look</span>
-                </p>
-
-
-                <div
-                    class="case-box-container mt-5 d-flex justify-content-center align-items-center flex-xl-row flex-column  gap-xl-4 gap-5 p-3">
-
-                    <div class="case-caption text-center bg-white position-relative ">
-                        <img src="./img/corona-1.png" alt="" class="img-2">
-                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 01</h6>
-                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
-                            distracted by the readable content of a page when looking at its layout. The point of using
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                            using
-                            'Content here, content here', making it look</p>
-
-                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
-                    </div>
-
-                    <div class="case-caption text-center  bg-white position-relative">
-                        <img src="./img/corona-2.png" alt="" class="img-2">
-                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 02</h6>
-                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
-                            distracted by the readable content of a page when looking at its layout. The point of using
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                            using
-                            'Content here, content here', making it look</p>
-                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
-                    </div>
-
-                    <div class="case-caption text-center bg-white position-relative">
-                        <img src="./img/corona-3.png" alt="" class="img-2">
-                        <h6 class="poppins-font fs-30  fw-700 bt text-capitalize mt-4 pt-2">cases 03</h6>
-                        <p class="fs-16 poppins-font bt fw-400 mt-2">It is a long established fact that a reader will be
-                            distracted by the readable content of a page when looking at its layout. The point of using
-                            Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                            using
-                            'Content here, content here', making it look</p>
-                        <img src="./img/red-corona.png" alt="" class="position-absolute red-corona">
-                    </div>
-                </div>
-            </div>
+        <div class="position-relative text-clr fs-40 poppins">
+          when looking at its layout. The point of using
+          <span class="position-absolute start-0 top-0 h-100 w-100 text-bright">
+            when looking at its layout. The point of using
+          </span>
         </div>
-    </div>
-    <!-- coronavirus cases section end -->
-
-    <!-- footer start -->
-
-    <div class="container-fluid p-0 bg-black">
-        <div class="container">
-            <div
-                class="corona-footer  text-white d-flex justify-content-center gap-5 flex-wrap flex-xl-row flex-lg-row flex-md-row flex-column text-xl-start text-lg-start text-md-start text-center">
-
-                <div class="footer-caption ">
-                    <h3 class="poppins-font fs-18 text-uppercase fw-700">resources</h3>
-                    <ul class="list-unstyled mt-3">
-                        <li class="fs-12">What we do</li>
-                        <li class="fs-12">media</li>
-                        <li class="fs-12">Travel Advice</li>
-                        <li class="fs-12">Protection</li>
-                        <li class="fs-12">Care</li>
-                    </ul>
-                </div>
-                <div class="footer-caption">
-                    <h3 class="poppins-font fs-18 text-uppercase fw-700">about</h3>
-                    <p class="poppins-font fs-12 mt-3 fw-400"> Many desktop publishing packages and web page editors now
-                        use
-                        Lorem
-                        Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
-                        still in their infancy. Various</p>
-
-                </div>
-                <div class="footer-caption">
-                    <h3 class="poppins-font fs-18 text-uppercase fw-700">contact us</h3>
-                    <ul class="list-unstyled mt-3">
-                        <li class="fs-12">Making this the first true</li>
-                        <li class="fs-12">Call: +91 9992165700</li>
-                        <li class="fs-12">Email: shubhamkumar65700@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="footer-caption">
-                    <h3 class="poppins-font fs-18 text-uppercase fw-700">countrys</h3>
-                    <img src="./img/map.png" alt="" class="mt-3">
-
-                </div>
-
-            </div>
+        <div class="position-relative text-clr fs-40 poppins">
+          Lorem Ipsum is that it has
+          <span class="position-absolute start-0 top-0 h-100 w-100 text-bright">
+            Lorem Ipsum is that it has
+          </span>
         </div>
+      </div>
     </div>
+  </section>
+  <!-- about section close -->
+
+  <!-- cost calculator start -->
+
+  <div class="cost_section bg_2">
+    <div class="container">
+      <h3 class="fs-32 futura-md text-white text-center">
+        Calculate the <span class="primary_clr">cost</span> of project
+      </h3>
+      <p class="futura-md fs-16 gray_clr text-center mt-4">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+
+      <div class="cost_container mt-5 pt-4">
+        <div class="cost_top d-flex align-items-center gap-5">
+          <h5 class="fs-34 futura-lt text-white">Design</h5>
+          <div class="toggle position-relative d-block cursor-pointer mt-2" id="toggle_1">
+            <span class="indicator position-absolute"></span>
+          </div>
+        </div>
+        <p class="futura-md fs-16 gray_clr mt-4">
+          It is a long established fact that a reader will be distracted by
+          the readable.
+        </p>
+        <hr class="text-white mt-3" />
+
+        <div class="box-container mt-5" id="box_container_1">
+          <div class="box-caption">
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cost_container mt-5 pt-4">
+        <div class="cost_top d-flex align-items-center gap-5">
+          <h5 class="fs-34 futura-lt text-white">Developerment</h5>
+          <div class="toggle position-relative d-block cursor-pointer mt-2" id="toggle_2">
+            <span class="indicator position-absolute"></span>
+          </div>
+        </div>
+        <p class="futura-md fs-16 gray_clr mt-4">
+          It is a long established fact that a reader will be distracted by
+          the readable.
+        </p>
+        <hr class="text-white mt-3" />
+
+        <div class="box-container mt-5" id="box_container_2">
+          <div class="box-caption">
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+            <div class="box cursor-pointer" data-price="200" onclick="updatePrice(this)">
+              <div class="d-flex align-items-center justify-content-between">
+                <h3 class="text-capitalize futura-lt text-white">
+                  logo Design
+                </h3>
+                <img src="public/img/check.png" alt="" class="check" />
+              </div>
+              <p class="gray_clr fs-14 futura-lt mt-2">
+                It is a long established fact that a <br />
+                reader will be distracted by the readable.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-cost mt-5 d-flex align-items-center justify-content-between">
+          <p class="fs-16 text-capitalize text-white">
+            total cost
+            <span class="d-block futura-md fs-24 mt-1" id="total-price"><img src="public/img/rs.png" alt=""
+                class="me-2" />
+              0</span>
+          </p>
+
+          <button class="cost_btn fs-16 futura-md text-capitalize bg-transparent border-0">
+            dicuss
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cost calculator close -->
+
+  <!-- slider section start -->
+
+  <section class="section5 testimonials bg_2">
+    <div class="container">
+      <h2 class="testimonials-heading text-capitalize text-white futura-md text-center fs-32">
+        what <span class="primary_clr">clients</span> say about us
+      </h2>
+      <p class="mt-4 gray_clr text-center futura-md">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+      <div class="col-lg-10 p-0 mt-5 pt-2 mx-auto">
+        <div class="client-slider">
+          <div>
+            <div class="client-slider-item">
+              <figure class="client-slider-img-wrapper">
+                <img class="client-slider-img" src="public/img/admin_1.png" />
+              </figure>
+              <div class="client-slider-content futura-lt fs-24 text-white">
+                “It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at
+                its layout”
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="client-slider-item">
+              <figure class="client-slider-img-wrapper">
+                <img class="client-slider-img" src="public/img/admin_2.png" />
+              </figure>
+              <div class="client-slider-content futura-lt fs-24 text-white">
+                “It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at
+                its layout”
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client-slider-controls d-table ms-auto mt-4">
+          <button type="button" class="client-slider-control client-slider-controls-prev border-0">
+            <img src="public/img/left.png" alt="" />
+            <span class="sr-only">Previous</span>
+          </button>
+          <button type="button" class="client-slider-control client-slider-controls-next border-0">
+            <img src="public/img/right.png" alt="" />
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- slider section close -->
+
+  <!-- footer start -->
+  <section class="footer_section bg_2 pb-4">
+    <footer class="container pt-5 pb-2">
+      <h2 class="poppins fs-36 fw-600 text-white mt-5 text-md-start text-center big d-table">
+        Have a project?
+        <span class="d-block pt-1">Let's Connect for a Wonderful Creation !</span>
+      </h2>
+
+      <div class="d-flex flex-md-row flex-column justify-content-center gap-5 mt-5 pt-md-5 pt-3">
+        <form>
+          <div class="d-flex gap-5">
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+
+          <input type="text" placeholder="Subject" class="mt-5 pt-4" /> <br />
+          <input type="text" placeholder="Any Message" class="mt-5 pt-4" />
+          <br />
+
+          <div class="d-flex justify-content-md-start justify-content-center">
+            <a href="##" class="footer_btn text-decoration-none">Discuss</a>
+          </div>
+        </form>
+        <div class="d-flex flex-column justify-content-between ms-lg-5 ms-0 ps-xl-5 ps-0 right_footer">
+          <div
+            class="d-flex flex-md-column justify-content-md-start justify-content-sm-evenly justify-content-between flex-row ms-md-5 ms-0">
+            <a href="#" class="text-decoration-none text-white futura-lt fs-16"><img src="public/img/phone.png" alt=""
+                class="me-md-4 me-2" />
+
+              +91-123456789</a>
+            <a href="#" class="text-decoration-none text-white futura-lt mt-md-4 mt-0 pt-md-2 pt-0 fs-16"><img
+                src="public/img/message.png" alt="" class="me-md-4 me-2" />
+
+              mail@gmail.com</a>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-xl-end justify-content-center gap-5 mt-md-0 mt-4">
+            <a href="#"><img src="public/img/linkdin.png" alt="" /></a>
+            <a href="#"><img src="public/img/fb.png" alt="" /></a>
+            <a href="#"><img src="public/img/instragram.png" alt="" /></a>
+            <a href="#"><img src="public/img/dibble.png" alt="" /> </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!-- footer close -->
+  <div class="cursor"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
 
-    <!-- footer end -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="script.js"></script>
+  <script src="js/circletype.min.js"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
